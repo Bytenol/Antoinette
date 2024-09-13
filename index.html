@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chemical Equation Balancer</title>
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">-->
+    <link href="https://cdn.jsdelivr.net/npm/beercss@3.4.11/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.4.11/dist/cdn/beer.min.js"></script>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js" type="module"></script>
+</head>
+<body class="dark">
+
+    <header class="primary">
+        <nav>
+            <button class="circle transparent">
+                <i>arrow_back</i>
+            </button>
+            <h5>ChemBalance</h5>
+            <div class="max"></div>
+            <button class="circle">
+                <i>funnel</i>
+                <menu class="left no-wrap">
+                    <a>Molecular</a>
+                    <a>Ionic</a>
+                    <a>Precipitation</a>
+                    <a>Redox</a>
+                </menu>
+            </button>
+        </nav>
+    </header>
+
+    <main class="responsive">
+        <article class="border">
+            <h5>Input</h5>
+            <p id="output"></p>
+        </article>
+        <article class="border">
+            <h5>Result</h5>
+            <p id="result"></p>
+        </article>
+        <article class="border">
+            <a class="chip fill">
+                <i class="primary-text">today</i>
+                <span>Suggestion</span>
+            </a>
+            <p>A fractional result occurs rarely, ensure to multiply all coefficient by two</p>
+        </article>
+        <div class="snackbar error" id="snackbar"></div>
+    </main>
+    <footer>
+        <div class="row">
+            <button class="circle left-round bottom-round extra small-elevate" id="randomBtn">
+                <i>shuffle</i>
+            </button>
+            <div class="max field border">
+                <input type="text" id="input" value="Fe2(SO4)3 + NH3 + H2O = Fe(OH)3 + (NH4)2SO4">
+<!--                <span class="error">Error text</span>-->
+                <span class="helper">Enter Chemical Equation</span>
+            </div>
+            <button class="circle right-round top-round extra small-elevate" id="balanceBtn">
+                <i>send</i>
+            </button>
+        </div>
+    </footer>
+
+</body>
+</html>

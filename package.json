@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "mathjs": "^12.2.1"
+  }
+}
